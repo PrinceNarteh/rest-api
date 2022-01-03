@@ -8,6 +8,9 @@ const port = config.get<number>("port");
 
 const app: Express = express();
 
+// middleware
+app.use(express.json());
+
 app.listen(port, async () => {
   logger.info(`Server running on http://localhost:${port}`);
   await connect();
