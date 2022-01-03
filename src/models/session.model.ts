@@ -20,5 +20,5 @@ const sessionSchema = new Schema(
   }
 );
 
-const SessionModel = model("Session", sessionSchema);
+const SessionModel = model<SessionDocument>("Session", sessionSchema);
 export default SessionModel;
